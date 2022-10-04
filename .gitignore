@@ -131,3 +131,4 @@ dmypy.json
 .pre-commit-config.yaml
 setup.cfg
 .idea/
+resources/owid-covid-data.json
