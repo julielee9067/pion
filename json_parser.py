@@ -24,5 +24,10 @@ def parse_json(file_path: str):
     f.close()
 
 
+def insert_into_db():
+    print()
+
+
 if __name__ == "__main__":
-    parse_json("resources/owid_covid_data.json")
+    # parse_json("resources/owid_covid_data.json")
+    insert_into_db()

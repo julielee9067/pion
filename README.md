@@ -35,3 +35,4 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 
 ## 출처
 1. owid-covid-data.json: https://github.com/owid/covid-19-data/tree/master/public/data
+flask-sqlacodegen --flask --outfile models.py postgresql://test:testpassword@0.0.0.0:5432/postgres
