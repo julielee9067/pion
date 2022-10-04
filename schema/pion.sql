@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS country (
   country_id SERIAL PRIMARY KEY,
-  country_name varchar NOT NULL,
+  country_name varchar NOT NULL UNIQUE,
   population_density float,
   population float,
   aged_65_older float,
@@ -14,7 +14,8 @@ CREATE TABLE IF NOT EXISTS country_data (
   new_cases float,
   total_cases_per_million float,
   new_cases_per_million float,
-  country_id int
+  country_id int,
+  UNIQUE (collected_date, country_id)
 );
 
 ALTER TABLE country_data ADD CONSTRAINT country_id_fkey FOREIGN KEY (country_id) REFERENCES country (country_id);

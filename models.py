@@ -18,7 +18,7 @@ class Country(Base):
     aged_70_older = Column(Float(53))
 
 
-class CountryDatum(Base):
+class CountryData(Base):
     __tablename__ = "country_data"
 
     country_data_id = Column(Integer, primary_key=True)
@@ -31,6 +31,6 @@ class CountryDatum(Base):
 
     country = relationship(
         "Country",
-        primaryjoin="CountryDatum.country_id == Country.country_id",
+        primaryjoin="CountryData.country_id == Country.country_id",
         backref="country_data",
     )
