@@ -1,4 +1,4 @@
-from json_parser import insert_into_db
+from core.json_parser import insert_into_db
 
 
 def main():

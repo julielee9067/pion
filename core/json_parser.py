@@ -3,8 +3,8 @@ from datetime import datetime
 
 from sqlalchemy.orm import Session
 
-from config import engine
-from models import Country, CountryData
+from core.config import engine
+from core.models import Country, CountryData
 
 
 def parse_json(file_path: str):
@@ -24,7 +24,7 @@ def parse_json(file_path: str):
 
         country_data["data"] = res
 
-    with open("resources/parsed_covid_data.json", "w") as f:
+    with open("../resources/parsed_covid_data.json", "w") as f:
         json.dump(data, f, indent=2)
 
     f.close()
@@ -37,7 +37,6 @@ def insert_into_db(parsed_file_path: str):
 
     country_data_objs = []
     with Session(engine) as session:
-
         for country, basic_info in data.items():
             country_obj = Country(
                 country_name=country,
@@ -79,3 +78,5 @@ def insert_into_db(parsed_file_path: str):
 
         session.bulk_save_objects(country_data_objs)
         session.commit()
+
+    print("Successfully inserted data to database")

@@ -17,6 +17,8 @@ class Country(Base):
     aged_65_older = Column(Float(53))
     aged_70_older = Column(Float(53))
 
+    country_datas = relationship("CountryData", backref="country")
+
 
 class CountryData(Base):
     __tablename__ = "country_data"
@@ -37,9 +39,3 @@ class CountryData(Base):
     people_vaccinated_per_hundred = Column(Float(53))
 
     country_id = Column(ForeignKey("country.country_id"))
-
-    country = relationship(
-        "Country",
-        primaryjoin="CountryData.country_id == Country.country_id",
-        backref="country_data",
-    )
