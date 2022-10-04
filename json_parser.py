@@ -61,14 +61,21 @@ def insert_into_db(parsed_file_path: str):
                             "new_cases": item.get("new_cases"),
                             "total_cases_per_million": item.get("total_cases_per_million"),
                             "new_cases_per_million": item.get("new_cases_per_million"),
+                            "total_deaths": item.get("total_deaths"),
+                            "total_deaths_per_million": item.get("total_deaths_per_million"),
+                            "new_deaths_per_million": item.get("new_deaths_per_million"),
+                            "new_deaths": item.get("new_deaths"),
+                            "total_vaccinations": item.get("total_vaccinations"),
+                            "people_vaccinated": item.get("people_vaccinated"),
+                            "total_vaccinations_per_hundred": item.get(
+                                "total_vaccinations_per_hundred"
+                            ),
+                            "people_vaccinated_per_hundred": item.get(
+                                "people_vaccinated_per_hundred"
+                            ),
                         }
                     )
                 )
 
         session.bulk_save_objects(country_data_objs)
         session.commit()
-
-
-if __name__ == "__main__":
-    # parse_json("resources/owid_covid_data.json")
-    insert_into_db(parsed_file_path="resources/parsed_covid_data.json")

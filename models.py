@@ -27,6 +27,15 @@ class CountryData(Base):
     new_cases = Column(Float(53))
     total_cases_per_million = Column(Float(53))
     new_cases_per_million = Column(Float(53))
+    total_deaths_per_million = Column(Float(53))
+    new_deaths_per_million = Column(Float(53))
+    new_deaths = Column(Float(53))
+    total_deaths = Column(Float(53))
+    total_vaccinations = Column(Float(53))
+    people_vaccinated = Column(Float(53))
+    total_vaccinations_per_hundred = Column(Float(53))
+    people_vaccinated_per_hundred = Column(Float(53))
+
     country_id = Column(ForeignKey("country.country_id"))
 
     country = relationship(
