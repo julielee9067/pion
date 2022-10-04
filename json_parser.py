@@ -25,4 +25,4 @@ def parse_json(file_path: str):
 
 
 if __name__ == "__main__":
-    parse_json("resources/owid-covid-data.json")
+    parse_json("resources/owid_covid_data.json")
