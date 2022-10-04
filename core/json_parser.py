@@ -4,10 +4,10 @@ from datetime import datetime
 from sqlalchemy.orm import Session
 
 from core.config import engine
-from core.models import Country, CountryData
+from core.models import Country, CountryData, ICU
 
 
-def parse_json(file_path: str):
+def parse_owid_json(file_path: str):
     f = open(file_path)
     data = json.load(f)
     f.close()
@@ -16,6 +16,7 @@ def parse_json(file_path: str):
         ind = 0
         res = []
 
+        # Remove all records that's after 2021.06.30
         while datetime.strptime(country_data["data"][ind]["date"], "%Y-%m-%d") <= datetime(
             2021, 6, 30
         ):
@@ -30,6 +31,37 @@ def parse_json(file_path: str):
     f.close()
 
 
+def insert_country_names_into_db(file_path: str):
+    f = open(file_path)
+    data = json.load(f)
+    f.close()
+
+    with Session(engine) as session:
+        for item in data:
+            country = session.query(Country).filter(Country.country_code == item["alpha-3"]).first()
+            if country is not None:
+                country.country_name = item["name"]
+        session.commit()
+
+
+def insert_icu_data_into_db(file_path: str):
+    f = open(file_path)
+    data = json.load(f)
+    f.close()
+
+    with Session(engine) as session:
+        icu_list = []
+        for item in data:
+            country = session.query(Country).filter(Country.country_name == item["country"]).first()
+            if country is not None:
+                icu_list.append(ICU(beds_per_capita=item["pop2022"], country_id=country.country_id))
+
+        session.bulk_save_objects(icu_list)
+        session.commit()
+
+    f.close()
+
+
 def insert_into_db(parsed_file_path: str):
     f = open(parsed_file_path)
     data = json.load(f)
@@ -37,9 +69,12 @@ def insert_into_db(parsed_file_path: str):
 
     country_data_objs = []
     with Session(engine) as session:
-        for country, basic_info in data.items():
+        for country_code, basic_info in data.items():
+            if "OWID" in country_code:
+                continue
+
             country_obj = Country(
-                country_name=country,
+                country_code=country_code,
                 **{
                     "population_density": basic_info.get("population_density"),
                     "population": basic_info.get("population"),

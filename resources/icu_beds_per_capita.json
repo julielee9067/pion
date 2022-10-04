@@ -1,0 +1,938 @@
+[
+  {
+    "country": "China",
+    "pop2022": "1425887.3370"
+  },
+  {
+    "country": "India",
+    "pop2022": "1417173.1730"
+  },
+  {
+    "country": "United States",
+    "pop2022": "338289.8570"
+  },
+  {
+    "country": "Indonesia",
+    "pop2022": "275501.3390"
+  },
+  {
+    "country": "Pakistan",
+    "pop2022": "235824.8620"
+  },
+  {
+    "country": "Nigeria",
+    "pop2022": "218541.2120"
+  },
+  {
+    "country": "Brazil",
+    "pop2022": "215313.4980"
+  },
+  {
+    "country": "Bangladesh",
+    "pop2022": "171186.3720"
+  },
+  {
+    "country": "Russia",
+    "pop2022": "144713.3140"
+  },
+  {
+    "country": "Mexico",
+    "pop2022": "127504.1250"
+  },
+  {
+    "country": "Japan",
+    "pop2022": "123951.6920"
+  },
+  {
+    "country": "Ethiopia",
+    "pop2022": "123379.9240"
+  },
+  {
+    "country": "Philippines",
+    "pop2022": "115559.0090"
+  },
+  {
+    "country": "Egypt",
+    "pop2022": "110990.1030"
+  },
+  {
+    "country": "DR Congo",
+    "pop2022": "99010.2120"
+  },
+  {
+    "country": "Vietnam",
+    "pop2022": "98186.8560"
+  },
+  {
+    "country": "Iran",
+    "pop2022": "88550.5700"
+  },
+  {
+    "country": "Turkey",
+    "pop2022": "85341.2410"
+  },
+  {
+    "country": "Germany",
+    "pop2022": "83369.8430"
+  },
+  {
+    "country": "Thailand",
+    "pop2022": "71697.0300"
+  },
+  {
+    "country": "United Kingdom",
+    "pop2022": "67508.9360"
+  },
+  {
+    "country": "Tanzania",
+    "pop2022": "65497.7480"
+  },
+  {
+    "country": "France",
+    "pop2022": "64626.6280"
+  },
+  {
+    "country": "South Africa",
+    "pop2022": "59893.8850"
+  },
+  {
+    "country": "Italy",
+    "pop2022": "59037.4740"
+  },
+  {
+    "country": "Myanmar",
+    "pop2022": "54179.3060"
+  },
+  {
+    "country": "Kenya",
+    "pop2022": "54027.4870"
+  },
+  {
+    "country": "Colombia",
+    "pop2022": "51874.0240"
+  },
+  {
+    "country": "South Korea",
+    "pop2022": "51815.8100"
+  },
+  {
+    "country": "Spain",
+    "pop2022": "47558.6300"
+  },
+  {
+    "country": "Uganda",
+    "pop2022": "47249.5850"
+  },
+  {
+    "country": "Sudan",
+    "pop2022": "46874.2040"
+  },
+  {
+    "country": "Argentina",
+    "pop2022": "45510.3180"
+  },
+  {
+    "country": "Algeria",
+    "pop2022": "44903.2250"
+  },
+  {
+    "country": "Iraq",
+    "pop2022": "44496.1220"
+  },
+  {
+    "country": "Afghanistan",
+    "pop2022": "41128.7710"
+  },
+  {
+    "country": "Poland",
+    "pop2022": "39857.1450"
+  },
+  {
+    "country": "Ukraine",
+    "pop2022": "39701.7390"
+  },
+  {
+    "country": "Canada",
+    "pop2022": "38454.3270"
+  },
+  {
+    "country": "Morocco",
+    "pop2022": "37457.9710"
+  },
+  {
+    "country": "Saudi Arabia",
+    "pop2022": "36408.8200"
+  },
+  {
+    "country": "Angola",
+    "pop2022": "35588.9870"
+  },
+  {
+    "country": "Uzbekistan",
+    "pop2022": "34627.6520"
+  },
+  {
+    "country": "Peru",
+    "pop2022": "34049.5880"
+  },
+  {
+    "country": "Malaysia",
+    "pop2022": "33938.2210"
+  },
+  {
+    "country": "Yemen",
+    "pop2022": "33696.6140"
+  },
+  {
+    "country": "Ghana",
+    "pop2022": "33475.8700"
+  },
+  {
+    "country": "Mozambique",
+    "pop2022": "32969.5180"
+  },
+  {
+    "country": "Nepal",
+    "pop2022": "30547.5800"
+  },
+  {
+    "country": "Madagascar",
+    "pop2022": "29611.7140"
+  },
+  {
+    "country": "Venezuela",
+    "pop2022": "28301.6960"
+  },
+  {
+    "country": "Ivory Coast",
+    "pop2022": "28160.5420"
+  },
+  {
+    "country": "Cameroon",
+    "pop2022": "27914.5360"
+  },
+  {
+    "country": "Niger",
+    "pop2022": "26207.9770"
+  },
+  {
+    "country": "Australia",
+    "pop2022": "26177.4130"
+  },
+  {
+    "country": "North Korea",
+    "pop2022": "26069.4160"
+  },
+  {
+    "country": "Taiwan",
+    "pop2022": "23893.3940"
+  },
+  {
+    "country": "Burkina Faso",
+    "pop2022": "22673.7620"
+  },
+  {
+    "country": "Mali",
+    "pop2022": "22593.5900"
+  },
+  {
+    "country": "Syria",
+    "pop2022": "22125.2490"
+  },
+  {
+    "country": "Sri Lanka",
+    "pop2022": "21832.1430"
+  },
+  {
+    "country": "Malawi",
+    "pop2022": "20405.3170"
+  },
+  {
+    "country": "Zambia",
+    "pop2022": "20017.6750"
+  },
+  {
+    "country": "Romania",
+    "pop2022": "19659.2670"
+  },
+  {
+    "country": "Chile",
+    "pop2022": "19603.7330"
+  },
+  {
+    "country": "Kazakhstan",
+    "pop2022": "19397.9980"
+  },
+  {
+    "country": "Ecuador",
+    "pop2022": 18001
+  },
+  {
+    "country": "Guatemala",
+    "pop2022": "17843.9080"
+  },
+  {
+    "country": "Chad",
+    "pop2022": "17723.3150"
+  },
+  {
+    "country": "Somalia",
+    "pop2022": "17597.5110"
+  },
+  {
+    "country": "Netherlands",
+    "pop2022": "17564.0140"
+  },
+  {
+    "country": "Senegal",
+    "pop2022": "17316.4490"
+  },
+  {
+    "country": "Cambodia",
+    "pop2022": "16767.8420"
+  },
+  {
+    "country": "Zimbabwe",
+    "pop2022": "16320.5370"
+  },
+  {
+    "country": "Guinea",
+    "pop2022": "13859.3410"
+  },
+  {
+    "country": "Rwanda",
+    "pop2022": "13776.6980"
+  },
+  {
+    "country": "Benin",
+    "pop2022": "13352.8640"
+  },
+  {
+    "country": "Burundi",
+    "pop2022": "12889.5760"
+  },
+  {
+    "country": "Tunisia",
+    "pop2022": "12356.1170"
+  },
+  {
+    "country": "Bolivia",
+    "pop2022": "12224.1100"
+  },
+  {
+    "country": "Belgium",
+    "pop2022": "11655.9300"
+  },
+  {
+    "country": "Haiti",
+    "pop2022": "11584.9960"
+  },
+  {
+    "country": "Jordan",
+    "pop2022": "11285.8690"
+  },
+  {
+    "country": "Dominican Republic",
+    "pop2022": "11228.8210"
+  },
+  {
+    "country": "Cuba",
+    "pop2022": "11212.1910"
+  },
+  {
+    "country": "South Sudan",
+    "pop2022": "10913.1640"
+  },
+  {
+    "country": "Sweden",
+    "pop2022": "10549.3470"
+  },
+  {
+    "country": "Czech Republic",
+    "pop2022": "10493.9860"
+  },
+  {
+    "country": "Honduras",
+    "pop2022": "10432.8600"
+  },
+  {
+    "country": "Greece",
+    "pop2022": "10384.9710"
+  },
+  {
+    "country": "Azerbaijan",
+    "pop2022": "10358.0740"
+  },
+  {
+    "country": "Portugal",
+    "pop2022": "10270.8650"
+  },
+  {
+    "country": "Papua New Guinea",
+    "pop2022": "10142.6190"
+  },
+  {
+    "country": "Hungary",
+    "pop2022": "9967.3080"
+  },
+  {
+    "country": "Tajikistan",
+    "pop2022": "9952.7870"
+  },
+  {
+    "country": "Belarus",
+    "pop2022": "9534.9540"
+  },
+  {
+    "country": "United Arab Emirates",
+    "pop2022": "9441.1290"
+  },
+  {
+    "country": "Israel",
+    "pop2022": "9038.3090"
+  },
+  {
+    "country": "Austria",
+    "pop2022": "8939.6170"
+  },
+  {
+    "country": "Togo",
+    "pop2022": "8848.6990"
+  },
+  {
+    "country": "Switzerland",
+    "pop2022": "8740.4720"
+  },
+  {
+    "country": "Sierra Leone",
+    "pop2022": "8605.7180"
+  },
+  {
+    "country": "Laos",
+    "pop2022": "7529.4750"
+  },
+  {
+    "country": "Hong Kong",
+    "pop2022": "7488.8650"
+  },
+  {
+    "country": "Serbia",
+    "pop2022": "7221.3650"
+  },
+  {
+    "country": "Nicaragua",
+    "pop2022": "6948.3920"
+  },
+  {
+    "country": "Libya",
+    "pop2022": "6812.3410"
+  },
+  {
+    "country": "Bulgaria",
+    "pop2022": "6781.9530"
+  },
+  {
+    "country": "Paraguay",
+    "pop2022": "6780.7440"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "pop2022": "6630.6230"
+  },
+  {
+    "country": "Turkmenistan",
+    "pop2022": "6430.7700"
+  },
+  {
+    "country": "El Salvador",
+    "pop2022": "6336.3920"
+  },
+  {
+    "country": "Singapore",
+    "pop2022": "5975.6890"
+  },
+  {
+    "country": "Republic of the Congo",
+    "pop2022": "5970.4240"
+  },
+  {
+    "country": "Denmark",
+    "pop2022": "5882.2610"
+  },
+  {
+    "country": "Slovakia",
+    "pop2022": "5643.4530"
+  },
+  {
+    "country": "Central African Republic",
+    "pop2022": "5579.1440"
+  },
+  {
+    "country": "Finland",
+    "pop2022": "5540.7450"
+  },
+  {
+    "country": "Lebanon",
+    "pop2022": "5489.7390"
+  },
+  {
+    "country": "Norway",
+    "pop2022": "5434.3190"
+  },
+  {
+    "country": "Liberia",
+    "pop2022": "5302.6810"
+  },
+  {
+    "country": "Palestine",
+    "pop2022": "5250.0720"
+  },
+  {
+    "country": "New Zealand",
+    "pop2022": "5185.2880"
+  },
+  {
+    "country": "Costa Rica",
+    "pop2022": "5180.8290"
+  },
+  {
+    "country": "Ireland",
+    "pop2022": "5023.1090"
+  },
+  {
+    "country": "Mauritania",
+    "pop2022": "4736.1390"
+  },
+  {
+    "country": "Oman",
+    "pop2022": "4576.2980"
+  },
+  {
+    "country": "Panama",
+    "pop2022": "4408.5810"
+  },
+  {
+    "country": "Kuwait",
+    "pop2022": "4268.8730"
+  },
+  {
+    "country": "Croatia",
+    "pop2022": "4030.3580"
+  },
+  {
+    "country": "Georgia",
+    "pop2022": "3744.3850"
+  },
+  {
+    "country": "Eritrea",
+    "pop2022": "3684.0320"
+  },
+  {
+    "country": "Uruguay",
+    "pop2022": "3422.7940"
+  },
+  {
+    "country": "Mongolia",
+    "pop2022": "3398.3660"
+  },
+  {
+    "country": "Moldova",
+    "pop2022": "3272.9960"
+  },
+  {
+    "country": "Puerto Rico",
+    "pop2022": "3252.4070"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "pop2022": "3233.5260"
+  },
+  {
+    "country": "Albania",
+    "pop2022": "2842.3210"
+  },
+  {
+    "country": "Jamaica",
+    "pop2022": "2827.3770"
+  },
+  {
+    "country": "Armenia",
+    "pop2022": "2780.4690"
+  },
+  {
+    "country": "Lithuania",
+    "pop2022": "2750.0550"
+  },
+  {
+    "country": "Gambia",
+    "pop2022": "2705.9920"
+  },
+  {
+    "country": "Qatar",
+    "pop2022": "2695.1220"
+  },
+  {
+    "country": "Botswana",
+    "pop2022": "2630.2960"
+  },
+  {
+    "country": "Namibia",
+    "pop2022": "2567.0120"
+  },
+  {
+    "country": "Gabon",
+    "pop2022": "2388.9920"
+  },
+  {
+    "country": "Lesotho",
+    "pop2022": "2305.8250"
+  },
+  {
+    "country": "Slovenia",
+    "pop2022": "2119.8440"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "pop2022": "2105.5660"
+  },
+  {
+    "country": "North Macedonia",
+    "pop2022": "2093.5990"
+  },
+  {
+    "country": "Latvia",
+    "pop2022": "1850.6510"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "pop2022": "1674.9080"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "pop2022": "1531.0440"
+  },
+  {
+    "country": "Bahrain",
+    "pop2022": "1472.2330"
+  },
+  {
+    "country": "Timor-Leste",
+    "pop2022": "1341.2960"
+  },
+  {
+    "country": "Estonia",
+    "pop2022": "1326.0620"
+  },
+  {
+    "country": "Mauritius",
+    "pop2022": "1299.4690"
+  },
+  {
+    "country": "Cyprus",
+    "pop2022": "1251.4880"
+  },
+  {
+    "country": "Eswatini",
+    "pop2022": "1201.6700"
+  },
+  {
+    "country": "Djibouti",
+    "pop2022": "1120.8490"
+  },
+  {
+    "country": "Reunion",
+    "pop2022": "974.0520"
+  },
+  {
+    "country": "Fiji",
+    "pop2022": "929.7660"
+  },
+  {
+    "country": "Comoros",
+    "pop2022": "836.7740"
+  },
+  {
+    "country": "Guyana",
+    "pop2022": "808.7260"
+  },
+  {
+    "country": "Bhutan",
+    "pop2022": "782.4550"
+  },
+  {
+    "country": "Solomon Islands",
+    "pop2022": "724.2730"
+  },
+  {
+    "country": "Macau",
+    "pop2022": "695.1680"
+  },
+  {
+    "country": "Luxembourg",
+    "pop2022": "647.5990"
+  },
+  {
+    "country": "Montenegro",
+    "pop2022": "627.0820"
+  },
+  {
+    "country": "Suriname",
+    "pop2022": "618.0400"
+  },
+  {
+    "country": "Cape Verde",
+    "pop2022": "593.1490"
+  },
+  {
+    "country": "Western Sahara",
+    "pop2022": "575.9860"
+  },
+  {
+    "country": "Malta",
+    "pop2022": "533.2860"
+  },
+  {
+    "country": "Maldives",
+    "pop2022": "523.7870"
+  },
+  {
+    "country": "Brunei",
+    "pop2022": "449.0020"
+  },
+  {
+    "country": "Bahamas",
+    "pop2022": "409.9840"
+  },
+  {
+    "country": "Belize",
+    "pop2022": "405.2720"
+  },
+  {
+    "country": "Guadeloupe",
+    "pop2022": "395.7520"
+  },
+  {
+    "country": "Iceland",
+    "pop2022": "372.8990"
+  },
+  {
+    "country": "Martinique",
+    "pop2022": "367.5070"
+  },
+  {
+    "country": "Vanuatu",
+    "pop2022": "326.7400"
+  },
+  {
+    "country": "Mayotte",
+    "pop2022": "326.1010"
+  },
+  {
+    "country": "French Polynesia",
+    "pop2022": "306.2790"
+  },
+  {
+    "country": "French Guiana",
+    "pop2022": "304.5570"
+  },
+  {
+    "country": "New Caledonia",
+    "pop2022": "289.9500"
+  },
+  {
+    "country": "Barbados",
+    "pop2022": "281.6350"
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "pop2022": "227.3800"
+  },
+  {
+    "country": "Samoa",
+    "pop2022": "222.3820"
+  },
+  {
+    "country": "Curacao",
+    "pop2022": "191.1630"
+  },
+  {
+    "country": "Saint Lucia",
+    "pop2022": "179.8570"
+  },
+  {
+    "country": "Guam",
+    "pop2022": "171.7740"
+  },
+  {
+    "country": "Kiribati",
+    "pop2022": "131.2320"
+  },
+  {
+    "country": "Grenada",
+    "pop2022": "125.4380"
+  },
+  {
+    "country": "Micronesia",
+    "pop2022": "114.1640"
+  },
+  {
+    "country": "Jersey",
+    "pop2022": "110.7780"
+  },
+  {
+    "country": "Seychelles",
+    "pop2022": "107.1180"
+  },
+  {
+    "country": "Tonga",
+    "pop2022": "106.8580"
+  },
+  {
+    "country": "Aruba",
+    "pop2022": "106.4450"
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "pop2022": "103.9480"
+  },
+  {
+    "country": "United States Virgin Islands",
+    "pop2022": "99.4650"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "pop2022": "93.7630"
+  },
+  {
+    "country": "Isle of Man",
+    "pop2022": "84.5190"
+  },
+  {
+    "country": "Andorra",
+    "pop2022": "79.8240"
+  },
+  {
+    "country": "Dominica",
+    "pop2022": "72.7370"
+  },
+  {
+    "country": "Cayman Islands",
+    "pop2022": "68.7060"
+  },
+  {
+    "country": "Bermuda",
+    "pop2022": "64.1840"
+  },
+  {
+    "country": "Guernsey",
+    "pop2022": "63.3010"
+  },
+  {
+    "country": "Greenland",
+    "pop2022": "56.4660"
+  },
+  {
+    "country": "Faroe Islands",
+    "pop2022": "53.0900"
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "pop2022": "49.5510"
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "pop2022": "47.6570"
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "pop2022": "45.7030"
+  },
+  {
+    "country": "American Samoa",
+    "pop2022": "44.2730"
+  },
+  {
+    "country": "Sint Maarten",
+    "pop2022": "44.1750"
+  },
+  {
+    "country": "Marshall Islands",
+    "pop2022": "41.5690"
+  },
+  {
+    "country": "Liechtenstein",
+    "pop2022": "39.3270"
+  },
+  {
+    "country": "Monaco",
+    "pop2022": "36.4690"
+  },
+  {
+    "country": "San Marino",
+    "pop2022": "33.6600"
+  },
+  {
+    "country": "Gibraltar",
+    "pop2022": "32.6490"
+  },
+  {
+    "country": "Saint Martin",
+    "pop2022": "31.7910"
+  },
+  {
+    "country": "British Virgin Islands",
+    "pop2022": "31.3050"
+  },
+  {
+    "country": "Palau",
+    "pop2022": "18.0550"
+  },
+  {
+    "country": "Cook Islands",
+    "pop2022": "17.0110"
+  },
+  {
+    "country": "Anguilla",
+    "pop2022": "15.8570"
+  },
+  {
+    "country": "Nauru",
+    "pop2022": "12.6680"
+  },
+  {
+    "country": "Wallis and Futuna",
+    "pop2022": "11.5720"
+  },
+  {
+    "country": "Tuvalu",
+    "pop2022": "11.3120"
+  },
+  {
+    "country": "Saint Barthelemy",
+    "pop2022": "10.9670"
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "pop2022": "5.8620"
+  },
+  {
+    "country": "Montserrat",
+    "pop2022": "4.3900"
+  },
+  {
+    "country": "Falkland Islands",
+    "pop2022": "3.7800"
+  },
+  {
+    "country": "Niue",
+    "pop2022": "1.9340"
+  },
+  {
+    "country": "Tokelau",
+    "pop2022": "1.8710"
+  },
+  {
+    "country": "Vatican City",
+    "pop2022": "0.5100"
+  }
+]

@@ -11,13 +11,15 @@ class Country(Base):
     __tablename__ = "country"
 
     country_id = Column(Integer, primary_key=True)
-    country_name = Column(String, nullable=False)
+    country_code = Column(String, nullable=False)
+    country_name = Column(String)
     population_density = Column(Float(53))
     population = Column(Float(53))
     aged_65_older = Column(Float(53))
     aged_70_older = Column(Float(53))
 
     country_datas = relationship("CountryData", backref="country")
+    icu = relationship("ICU", backref="country")
 
 
 class CountryData(Base):
@@ -39,3 +41,11 @@ class CountryData(Base):
     people_vaccinated_per_hundred = Column(Float(53))
 
     country_id = Column(ForeignKey("country.country_id"))
+
+
+class ICU(Base):
+    __tablename__ = "icu"
+
+    icu_id = Column(Integer, primary_key=True)
+    country_id = Column(ForeignKey("country.country_id"))
+    beds_per_capita = Column(Float(53), nullable=False)
