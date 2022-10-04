@@ -33,6 +33,9 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 1. 데이터 베이스 설치
 `docker-compose -f docker-compose-db.yml up -d`
 
+2. 코드 실행
+`python main.py`
+
+
 ## 출처
-1. owid-covid-data.json: https://github.com/owid/covid-19-data/tree/master/public/data
-flask-sqlacodegen --flask --outfile models.py postgresql://test:testpassword@0.0.0.0:5432/postgres
+- owid-covid-data.json: https://github.com/owid/covid-19-data/tree/master/public/data

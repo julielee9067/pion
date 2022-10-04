@@ -49,11 +49,12 @@ def insert_into_db(parsed_file_path: str):
                 }
             )
             session.add(country_obj)
+            session.commit()
 
             for item in basic_info["data"]:
                 country_data_objs.append(
                     CountryData(
-                        country=country_obj,
+                        country_id=country_obj.country_id,
                         **{
                             "collected_date": item.get("date"),
                             "total_cases": item.get("total_cases"),
