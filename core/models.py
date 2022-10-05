@@ -12,6 +12,7 @@ class Country(Base):
 
     country_id = Column(Integer, primary_key=True)
     country_code = Column(String, nullable=False)
+    population = Column(Float(53))
     country_datas = relationship("CountryData", backref="country")
 
 

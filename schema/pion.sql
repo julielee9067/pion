@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS country (
   country_id SERIAL PRIMARY KEY,
-  country_code varchar NOT NULL UNIQUE
+  country_code varchar NOT NULL UNIQUE,
+  population float NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS country_data (

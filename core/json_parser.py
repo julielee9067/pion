@@ -44,7 +44,7 @@ def insert_into_db(parsed_file_path: str):
             if "OWID" in country_code:
                 continue
 
-            country_obj = Country(country_code=country_code)
+            country_obj = Country(country_code=country_code, population=basic_info["population"])
             session.add(country_obj)
             session.commit()
 
