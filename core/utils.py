@@ -16,6 +16,7 @@ def calculate_expected_num_deaths(
 
 
 def get_polyfit_line(x: List[float], y: List[float], degree: int = 5) -> poly1d:
+    x = mdates.date2num(x) if isinstance(x[0], date) else x
     trend = np.polyfit(x, y, degree)
     return np.poly1d(trend)
 
