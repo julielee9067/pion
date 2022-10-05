@@ -7,6 +7,7 @@ from matplotlib import pyplot as plt
 import matplotlib.dates as mdates
 
 from numpy import poly1d
+from pandas import DataFrame
 
 
 def calculate_expected_num_deaths(
@@ -45,3 +46,10 @@ def plot_graph_with_polyfit_line(
 def predict_trend(input: Any, polyfit_line: poly1d) -> float:
     numeric_input = mdates.date2num(input) if isinstance(input, date) else input
     return polyfit_line(numeric_input)
+
+
+def compare_stat(no_v: DataFrame, v: DataFrame) -> float:
+    no_v_num_deaths = no_v["num_deaths_prediction"].sum()
+    v_num_deaths = v["num_deaths_prediction"].sum()
+
+    return (v_num_deaths - no_v_num_deaths) / no_v_num_deaths * 100
