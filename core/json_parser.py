@@ -8,6 +8,9 @@ from core.models import Country, CountryData
 
 
 # This was not necessary, but put it here for json file size reduction
+from core.utils import calculate_expected_num_deaths
+
+
 def parse_owid_json(file_path: str):
     f = open(file_path)
     data = json.load(f)
@@ -49,14 +52,20 @@ def insert_into_db(parsed_file_path: str):
             session.commit()
 
             for item in basic_info["data"]:
-                country_data_list.append(
-                    {
-                        "country_id": country_obj.country_id,
-                        "collected_date": item.get("date"),
-                        "total_cases": item.get("total_cases"),
-                        "total_deaths": item.get("total_deaths"),
-                    }
-                )
+                if item.get("total_cases") is not None and item.get("total_deaths") is not None:
+                    country_data_list.append(
+                        {
+                            "country_id": country_obj.country_id,
+                            "collected_date": item.get("date"),
+                            "total_cases": item.get("total_cases"),
+                            "total_deaths": item.get("total_deaths"),
+                            "expected_deaths": calculate_expected_num_deaths(
+                                total_cases=item.get("total_cases"),
+                                total_deaths=item.get("total_deaths"),
+                                population=country_obj.population,
+                            ),
+                        }
+                    )
 
         session.bulk_insert_mappings(CountryData, country_data_list)
         session.commit()

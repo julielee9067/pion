@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 from itertools import islice
 from typing import Dict
 
@@ -11,7 +11,6 @@ from core.models import Country, CountryData
 import matplotlib
 
 from core.utils import (
-    calculate_expected_num_deaths,
     plot_graph_with_polyfit_line,
     predict_trend,
     get_polyfit_line,
@@ -31,13 +30,8 @@ def get_dates_and_num_deaths() -> Dict:
             num_deaths = []
 
             for data in country.country_datas:
-                if data.total_cases:
-                    expected_num_deaths = calculate_expected_num_deaths(
-                        total_cases=data.total_cases,
-                        total_deaths=data.total_deaths,
-                        population=country.population,
-                    )
-                    num_deaths.append(expected_num_deaths)
+                if data.expected_deaths:
+                    num_deaths.append(data.expected_deaths)
                     dates.append(data.collected_date)
 
             if not num_deaths:  # Some total_deaths data were missing for a few countries
@@ -60,11 +54,7 @@ def get_num_deaths_by_date(date: datetime):
         )
         for data in country_data_list:
             if data.total_cases:
-                res[data.country.country_code] = calculate_expected_num_deaths(
-                    total_deaths=data.total_deaths,
-                    total_cases=data.total_cases,
-                    population=data.country.population,
-                )
+                res[data.country.country_code] = data.expected_deaths
 
     # Return in descending order with the highest num_deaths
     return dict(sorted(res.items(), key=lambda item: item[1], reverse=True))
@@ -89,7 +79,7 @@ def plot_country_graph(country_code: str) -> None:
     )
 
 
-def get_prediction_on_n_countries_stat_by_date(date: datetime, n: int = 10) -> DataFrame:
+def get_prediction_on_n_countries_stat_by_date(date: date, n: int = 10) -> DataFrame:
     res = get_dates_and_num_deaths()
     prediction_results = dict()
 
@@ -107,3 +97,24 @@ def get_prediction_on_n_countries_stat_by_date(date: datetime, n: int = 10) -> D
     p["num_vaccine"] = p["perc"] * 1000000
 
     return p
+
+
+def insert_new_pred_stat(date: date = datetime(2021, 7, 1)) -> None:
+    pred = (
+        get_prediction_on_n_countries_stat_by_date(date=date).set_index("country_code").T.to_dict()
+    )
+    new_stat_list = []
+    with Session(engine) as session:
+        for country_code, data in pred.items():
+            country = session.query(Country).filter(Country.country_code == country_code).first()
+            new_data = dict(
+                collected_date=date,
+                expected_deaths=data["num_deaths_prediction"] - data["num_vaccine"],
+                country_id=country.country_id,
+            )
+            new_stat_list.append(new_data)
+
+        session.bulk_insert_mappings(CountryData, new_stat_list)
+        session.commit()
+
+    print(f"Successfully inserted new stat for {date}")
