@@ -34,19 +34,19 @@ def main():
     print(prediction)
 
     insert_new_pred_stat()
-    print("------- 백신 미지급 3개월 후 -------")
+    print("------- 백신 지급 3개월 후 -------")
     prediction = get_prediction_on_n_countries_stat_by_date(date=datetime(2021, 9, 30))
     print(prediction)
 
-    print("------- 백신 미지급 6개월 후 -------")
+    print("------- 백신 지급 6개월 후 -------")
     prediction = get_prediction_on_n_countries_stat_by_date(date=datetime(2021, 12, 30))
     print(prediction)
 
-    print("------- 백신 미지급 12개월 후 -------")
+    print("------- 백신 지급 12개월 후 -------")
     prediction = get_prediction_on_n_countries_stat_by_date(date=datetime(2022, 6, 30))
     print(prediction)
 
-    print("------- 백신 미지급 36개월 후 -------")
+    print("------- 백신 지급 36개월 후 -------")
     prediction = get_prediction_on_n_countries_stat_by_date(date=datetime(2024, 6, 30))
     print(prediction)
 

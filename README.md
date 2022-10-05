@@ -28,6 +28,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 (나라 별 백신 보유 현황을 알면 결과가 달라질 수 있지만, 자료를 찾을 수 없었습니다.)
 
 위의 내용에 따라 분배할 경우, 아래와 같은 결과가 도출됩니다.
+```
   country_code    num_deaths      perc    num_vaccine
 0          CHN  6.506341e+07  0.477363  477362.630077
 1          IND  1.848845e+07  0.135648  135647.619690
@@ -39,9 +40,11 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          BRA  5.984050e+06  0.043904   43904.275390
 8          PAK  5.389277e+06  0.039541   39540.500584
 9          RUS  3.540585e+06  0.025977   25976.856610
-
+```
 백신 미분배 경우 3개월, 6개월, 12개월, 36개월 후:
-- 3개월
+
+```
+------- 백신 미지급 3개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           1.277393e+08  0.323612  323611.743302
 1          BRA           5.628240e+07  0.142585  142584.550833
@@ -53,8 +56,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          NGA           1.861366e+07  0.047155   47155.412351
 8          PAK           1.471944e+07  0.037290   37289.889126
 9          DZA           1.462627e+07  0.037054   37053.854369
-
-- 6개월
+------- 백신 미지급 6개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND            601227904.0  0.380226  380225.672512
 1          BRA            260865104.0  0.164975  164975.060112
@@ -66,8 +68,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA             68844480.0  0.043538   43538.296431
 8          PAK             52889076.0  0.033448   33447.856224
 9          KEN             48980088.0  0.030976   30975.752748
-
-- 12개월
+------- 백신 미지급 12개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           4.933845e+09  0.392990  392989.747494
 1          BRA           2.097058e+09  0.167034  167034.482794
@@ -79,8 +80,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA           5.470184e+08  0.043571   43571.009958
 8          PAK           3.981491e+08  0.031713   31713.299707
 9          KEN           3.818979e+08  0.030419   30418.860754
-
-- 36개월
+------- 백신 미지급 36개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           3.444526e+11  0.400269  400269.352007
 1          BRA           1.437805e+11  0.167079  167079.399921
@@ -92,9 +92,11 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA           3.634309e+10  0.042232   42232.298718
 8          PAK           2.748589e+10  0.031940   31939.836312
 9          USA           2.597250e+10  0.030181   30181.211624
+```
 
 위 결과대로 각 국에 백신을 분배할 경우, 3개월, 6개월, 12개월 후의 사망자 수는 아래와 같이 변화할 것 입니다.
-- 3개월
+```
+------- 백신 지급 3개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           1.276334e+08  0.323823  323822.534523
 1          BRA           5.624173e+07  0.142693  142692.605004
@@ -106,8 +108,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          NGA           1.861366e+07  0.047225   47225.274858
 8          PAK           1.469140e+07  0.037274   37273.994351
 9          DZA           1.462627e+07  0.037109   37108.751040
-
-- 6개월
+------- 백신 지급 6개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND            600798368.0  0.380289  380289.350901
 1          BRA            260700512.0  0.165016  165016.474359
@@ -119,8 +120,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA             68844480.0  0.043577   43576.720588
 8          PAK             52775496.0  0.033405   33405.482082
 9          KEN             48980088.0  0.031003   31003.089996
-
-- 12개월
+------- 백신 지급 12개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           4.930941e+09  0.393053  393052.648262
 1          BRA           2.095951e+09  0.167071  167071.332767
@@ -132,7 +132,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA           5.470184e+08  0.043604   43603.648370
 8          PAK           3.973838e+08  0.031676   31676.050567
 9          KEN           3.818979e+08  0.030442   30441.647082
-- 36개월
+------- 백신 지급 36개월 후 -------
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           3.442912e+11  0.400342  400341.823933
 1          BRA           1.437193e+11  0.167117  167116.835870
@@ -144,8 +144,10 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          DZA           3.634309e+10  0.042260   42259.754015
 8          PAK           2.744348e+10  0.031911   31911.284686
 9          USA           2.593512e+10  0.030157   30157.364826
+```
 
 만약 두 달 후에 백신을 받을 경우, 코로나로 인한 사망률 그래프의 기울기를 계산하여 2021년 8월 30일의 확진자 대비 사망자 수를 예측할 수 있었고, 그에 따른 백신 분배 통계가 달라진 것을 확인할 수 있었습니다.
+```
   country_code  num_deaths_prediction      perc    num_vaccine
 0          IND           6.747814e+07  0.268655  268654.701241
 1          CHN           5.421283e+07  0.215841  215840.723361
@@ -157,6 +159,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 7          NGA           1.028405e+07  0.040945   40944.500750
 8          PAK           9.744822e+06  0.038798   38797.632654
 9          DZA           7.489096e+06  0.029817   29816.778133
+```
 
 ## 과정
 처음엔 단순히 인구 밀도와 확진자 수의 상관 관계가 있을 거라고 예상하고 관련된 데이터셋을 찾아보았습니다. 하지만, 직접 그려본 그래프와 연구 자료가 그 추론은 사실이 아니라는 것을 알려주었습니다.
@@ -173,6 +176,7 @@ The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccin
 3. 코드 실행
 `python core/main.py`
 
+- 만일 코드를 한 번 이상 실행하고 싶으실 경우, 데이터베이스를 truncate 하시거나 main.py의 db insert function들을 comment out 하시고 사용하시면 됩니다.
 
 ## 출처
 - owid-covid-data.json: https://github.com/owid/covid-19-data/tree/master/public/data
