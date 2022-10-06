@@ -69,7 +69,6 @@ def main():
         date=datetime(2024, 6, 30), file_name="resources/v_36.csv"
     )
     print(v_36.iloc[:10].to_string())
-    "{:.8f}".format(float("8.99284722486562e-02"))
 
     comp_3 = "{:.8f}".format(compare_stat(no_v=no_v_3, v=v_3))
     comp_6 = "{:.8f}".format(compare_stat(no_v=no_v_6, v=v_6))
