@@ -8,7 +8,7 @@ from core.models import Country, CountryData
 
 
 # This was not necessary, but put it here for json file size reduction
-from core.utils import calculate_expected_num_deaths
+from core.utils import calculate_expected_num_deaths, calculate_mortality_rate
 
 
 def parse_owid_json(file_path: str):
@@ -57,11 +57,14 @@ def insert_into_db(parsed_file_path: str):
                         {
                             "country_id": country_obj.country_id,
                             "collected_date": item.get("date"),
-                            "total_cases": item.get("total_cases"),
-                            "total_deaths": item.get("total_deaths"),
+                            "total_cases": item["total_cases"],
+                            "total_deaths": item["total_deaths"],
+                            "mortality_rate": calculate_mortality_rate(
+                                total_cases=item["total_cases"], total_deaths=item["total_deaths"]
+                            ),
                             "expected_deaths": calculate_expected_num_deaths(
-                                total_cases=item.get("total_cases"),
-                                total_deaths=item.get("total_deaths"),
+                                total_cases=item["total_cases"],
+                                total_deaths=item["total_deaths"],
                                 population=country_obj.population,
                             ),
                         }

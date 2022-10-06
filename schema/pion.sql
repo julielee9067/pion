@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS country_data (
   total_cases float default 0,
   total_deaths float default 0,
   expected_deaths float default 0,
+  mortality_rate float default 0,
   country_id int,
   UNIQUE (collected_date, country_id)
 );

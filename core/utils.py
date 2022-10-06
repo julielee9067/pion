@@ -10,13 +10,17 @@ from numpy import poly1d
 from pandas import DataFrame
 
 
+def calculate_mortality_rate(total_cases: float, total_deaths: float) -> float:
+    return total_deaths / total_cases
+
+
 def calculate_expected_num_deaths(
     total_cases: float, total_deaths: float, population: float
 ) -> float:
     return total_deaths / total_cases * population
 
 
-def get_polyfit_line(x: List[float], y: List[float], degree: int = 5) -> poly1d:
+def get_polyfit_line(x: List[float], y: List[float], degree: int = 10) -> poly1d:
     x = mdates.date2num(x) if isinstance(x[0], date) else x
     trend = np.polyfit(x, y, degree)
     return np.poly1d(trend)

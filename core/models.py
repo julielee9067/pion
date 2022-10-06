@@ -23,6 +23,7 @@ class CountryData(Base):
     collected_date = Column(Date, nullable=False)
     total_cases = Column(Float(53))
     total_deaths = Column(Float(53))
+    mortality_rate = Column(Float(53))
     expected_deaths = Column(Float(53))
 
     country_id = Column(ForeignKey("country.country_id"))
