@@ -1,23 +1,5 @@
 # pion
 
-
-## Task
-The time is 2021.06.30. COVID is still in a global pandemic state.
-An anonymous billionaire has contacted Pion Corp.
-"I have acquired 1 million doses of COVID vaccine.
-I don't want to sell these.
-I don't want to waste them either.
-What would be the most effective way to distribute them?"
-
-As a data scientist at Pion Corp, you are tasked with providing the best way to fulfill the client's needs.
-The report will be titled, "The DATA SCIENTIFIC way of distributing COVID vaccine".
-
-1. Please define the OBJECTIVE clearly. Why should the billionaire agree that this objective is important? Explain it with "first principle" thinking.
-2. What should we do with the vaccine? What are the "action items" with What, When, Where.
-3. What is the expected impact by #2:action on #1:Objective? e.g. "the rocket should go in orbit" (x). "the rocket will reach 1000km altitude at 130 sec, and 2000km at 170 sec, cruising at 8000km/h, with 33% fuel left."(o)
-4. (extra credit:) If the billionaire does not have the vaccine now, but will receive it in 2 months (2021.08.31). How should the #2:action change? How can we know that your prediction is accurate?
-
-
 ## Report
 코로나 백신을 가장 영향력있게 쓰는 방법은 코로나로 인한 사망자 수를 최소화 시키는 것 입니다.
 코로나 바이러스로 인한 사망자 수는 2021년 6월 30일부로 50만 명을 넘어섰으며, 사망률은 많게는 10% 까지 치솟았습니다.
