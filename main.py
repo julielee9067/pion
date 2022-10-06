@@ -84,7 +84,7 @@ def main():
 
     print("------- 2021.08.30 백신 공급 량 -------")
     prediction = get_prediction_on_countries_stat_by_date(
-        date=datetime(2021, 8, 30), file_name="prediction.csv"
+        date=datetime(2021, 8, 30), file_name="resources/prediction.csv"
     )
     print(prediction.iloc[:10].to_string())
 
