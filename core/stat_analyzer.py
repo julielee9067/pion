@@ -64,6 +64,7 @@ def get_first_n_countries_stat(n: int = 10) -> DataFrame:
     num_deaths = get_num_deaths_by_date(date=datetime(2021, 6, 30))
     first_10_countries = list(islice(num_deaths.items(), n))
     p = DataFrame(first_10_countries, columns=["country_code", "num_deaths"])
+    p["num_deaths"] = p["num_deaths"].astype("int64")
     p["perc"] = p["num_deaths"] / p["num_deaths"].sum()
     p["num_vaccine"] = p["perc"] * 1000000
 
@@ -93,6 +94,7 @@ def get_prediction_on_n_countries_stat_by_date(date: date, n: int = 10) -> DataF
     first_10_countries = list(islice(prediction_results.items(), n))
 
     p = DataFrame(first_10_countries, columns=["country_code", "num_deaths_prediction"])
+    p["num_deaths_prediction"] = p["num_deaths_prediction"].astype("int64")
     p["perc"] = p["num_deaths_prediction"] / p["num_deaths_prediction"].sum()
     p["num_vaccine"] = p["perc"] * 1000000
 
