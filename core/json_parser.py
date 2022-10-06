@@ -7,10 +7,10 @@ from core.config import engine
 from core.models import Country, CountryData
 
 
-# This was not necessary, but put it here for json file size reduction
 from core.utils import calculate_expected_num_deaths, calculate_mortality_rate
 
 
+# This was not necessary, but put it here for json file size reduction
 def parse_owid_json(file_path: str):
     f = open(file_path)
     data = json.load(f)
